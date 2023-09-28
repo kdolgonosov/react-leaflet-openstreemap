@@ -30,11 +30,7 @@ function App() {
                         name={markers.LocoType + ' ' + markers.LocoNumber}
                     >
                         <LayerGroup>
-                            <Polyline
-                                pathOptions={{ color: '#000' }}
-                                positions={markers.points}
-                                onClick={(e) => console.log(1)}
-                            >
+                            <Polyline pathOptions={{ color: '#000' }} positions={markers.points}>
                                 <Popup>
                                     <div className='popup-container'>
                                         <span>Тип: {markers.LocoType}</span>
